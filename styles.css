@@ -58,11 +58,13 @@ main {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
   font-weight: bold;
+  margin-right: 1rem;
 }
 
 .main-container {
   display: inline-block;
   width: 100%;
+  /* height: 100%; */
   margin-top: -6rem;
   z-index: -9999;
   position: relative;
@@ -73,7 +75,12 @@ main {
   display: block;
 }
 
-.section-one, .about-div {
+img.main-img {
+  height: 100%;
+}
+
+.section-one,
+.about-div {
   padding: 2rem;
 }
 
@@ -119,6 +126,10 @@ button {
   background-color: black;
 }
 
+.button-desktop {
+  display: none;
+}
+
 h1 {
   margin-block: 1rem;
 }
@@ -153,15 +164,107 @@ a.shop-now {
   display: none;
 }
 
-@media screen and (min-width: 900px) {
-    .nav-bar {
-        display: block;
-        background-color: transparent;
-        position: absolute;
-    } 
-    
-    .close-div, .top-left {
-        display: none;
-    }
-    
+.desktop-top,
+.desktop-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-bar {
+    display: block;
+    background-color: transparent;
+    /* position: absolute; */
+  }
+
+  .close-div,
+  .top-left {
+    display: none;
+  }
+
+  .head-mobile-wrapper {
+    display: none;
+  }
+
+  .desktop-wrapper {
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .desktop-wrapper a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .main-container {
+    display: none;
+  }
+
+  .desktop-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    z-index: -9999;
+    /* position: relative; */
+  }
+
+  /* .desktop-top > * {
+    flex-shrink: 1;
+  } */
+
+  .desktop-main-container {
+    width: 100%;
+    /* position: ab; */
+  }
+
+  img.desktop-image-hero {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-desktop-padding {
+    padding: 4rem;
+  }
+
+  .section-one {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .down-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+
+  .down-section img {
+    height: 100%;
+  }
+
+  .about-div {
+    padding: 3rem;
+  }
+
+  .button-desktop {
+    display: flex;
+    /* position: absolute; */
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: black; */
+  }
+  .section-desktop-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section-desktop-padding p {
+    line-height: 2rem;
+  }
 }
