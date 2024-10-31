@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(213, 19%, 18%);
+  width: 85%;
+  max-width: 375px;
+  align-items: center;
+  justify-self: center;
+  /* margin-inline: auto; */
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  /* margin-bottom: 2rem; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(217, 12%, 63%);
+}
+/* .nav-bar-link {
+    position: relative;
+    z-index: 100;
+} */
+
+.close {
+  margin-right: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+}
+
+.main-container {
+  display: inline-block;
+  width: 100%;
+  margin-top: -6rem;
+  z-index: -9999;
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  display: block;
+}
+
+.section-one, .about-div {
+  padding: 2rem;
+}
+
+.nav-default {
+  padding: 2rem;
+  padding-top: 3rem;
+  /* display: none; */
+}
+
+.close-div {
+  display: inline-block;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.top-left {
+  position: absolute;
+}
+
+.center {
+  position: absolute;
+  left: 45%;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0;
+  margin: 0;
+  background-color: black;
+  border: none;
+}
+
+.button {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+}
+
+h1 {
+  margin-block: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  color: hsl(0, 0%, 63%);
+  margin-block: 2rem;
+  line-height: 1.5rem;
+}
+
+a.shop-now {
+  text-decoration: none;
+  color: hsl(0, 0%, 27%);
+  letter-spacing: 1rem;
+  margin-block: 3rem;
+  font-weight: bold;
+}
+
+.nav-bar {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .nav-bar {
+        display: block;
+        background-color: transparent;
+        position: absolute;
+    } 
+    
+    .close-div, .top-left {
+        display: none;
+    }
+    
+}
